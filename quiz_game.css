@@ -1,0 +1,77 @@
+body
+{
+    background: url(Gradient_bg3.png);
+	font-family: 'Varela Round', sans-serif;
+}
+
+
+
+	.login_div1 , .login_div2
+	{
+		background: white;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+        box-shadow: 20px 20px 10px rgba(128, 128, 128, 0.094);
+	}
+
+
+#player1_input::placeholder
+{
+	color: rgba(135, 135, 135, 0.651);
+}
+
+#player2_input::placeholder
+{
+	color: rgba(135, 135, 135, 0.651);
+}
+
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
+
+label
+{
+	text-align: left;
+}
+
+h1{
+    color: white;
+    font-size: 60px;
+}
+
+.btn-lg {
+    background: rgba(0, 0, 0, 0)!important;
+    border-color: black !important;
+    color: black !important;
+    border-width: 3px;
+}
+
+
+.btn btn-primary, .btn-lg:hover {
+    background: black!important;
+    cursor: pointer; 
+    color: white !important;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.094);
+}
+
+#login {
+    background-color: aliceblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
