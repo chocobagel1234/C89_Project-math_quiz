@@ -1,30 +1,36 @@
 body
 {
-    background: url(Gradient_bg3.png);
+    text-align: center;
+    background: url(Gradient_bg3.png);object-fit: cover;
 	font-family: 'Varela Round', sans-serif;
 }
 
 
 
-	.login_div1 , .login_div2
-	{
-		background: white;
-		padding: 10px;
-		float: none;
-		border-radius: 15px;
-        box-shadow: 20px 20px 10px rgba(128, 128, 128, 0.094);
-	}
+.login_div1 , .login_div2
+{
+	background: white;
+	padding: 10px;
+	float: none;
+	border-radius: 15px;
+    box-shadow: 20px 20px 10px rgba(128, 128, 128, 0.094);
+}
+
+.num_div1 , .num_div2 {
+	background: white;
+	padding: 20px;
+	float: none;
+	border-radius: 15px;
+    box-shadow: 20px 20px 10px rgba(128, 128, 128, 0.094);
+}
 
 
-#player1_input::placeholder
+
+#player1_input::placeholder, #player2_input::placeholder, #answer_input::placeholder
 {
 	color: rgba(135, 135, 135, 0.651);
 }
 
-#player2_input::placeholder
-{
-	color: rgba(135, 135, 135, 0.651);
-}
 
 #word
 {
@@ -34,19 +40,22 @@ body
 {
 	letter-spacing: 5px;
 }
+
 #output
 {
 background: white;
 border-radius: 10px;
-border-top: 10px solid #AA4465;
+border-top: 10px solid #7209B7;
 padding: 10px;
 float: none;
 text-align: left;
+box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.094);
 }
 
 label
 {
 	text-align: left;
+    font-weight: 100;
 }
 
 h1{
@@ -69,9 +78,48 @@ h1{
     box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.094);
 }
 
-#login {
+#login, #quiz-game {
     background-color: aliceblue;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
 }
+
+.div-header, .turn-type, .question {
+    background-image: linear-gradient(to right, #7209B7, #f72584a5, #F72585);
+    background-size: 130%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+ 
+}
+
+.btn btn-info, .btn-sm {
+    background: #7209B7 !important;
+    border-color: #7209B7;
+    color: white !important;
+    text-align: center, center !important;
+}
+
+.btn btn-info:hover, .btn-sm:hover {
+    background: #7409b7 !important;
+    border-color: #7209B7;
+    color: white !important;
+    text-align: center, center !important;
+}
+
+.question-elements {
+    display: block;
+    text-align: left, top;
+}
+
+.player_name, .player_score {
+    color: whitesmoke;
+}
+
+.player_name {
+    font-weight: bolder;
+}
+
