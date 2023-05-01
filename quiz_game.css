@@ -85,8 +85,8 @@ h1{
 
 }
 
-.div-header, .turn-type, .question {
-    background-image: linear-gradient(to right, #7209B7, #f72584a5, #F72585);
+.div-header, .turn-type, .question, .player_name {
+    background-image: linear-gradient(to right, #7209B7, #f72584c5, #F72585);
     background-size: 130%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -103,9 +103,24 @@ h1{
     text-align: center, center !important;
 }
 
+
 .btn btn-info:hover, .btn-sm:hover {
-    background: #7409b7 !important;
+    background: #7209B7 !important;
     border-color: #7209B7;
+    color: white !important;
+    text-align: center, center !important;
+}
+
+.btn btn-info, .btn-md {
+    background: #7209B7 !important;
+    border-color: #7209B7;
+    color: white !important;
+    text-align: center, center !important;
+}
+
+.btn btn-info:hover, .btn-md:hover {
+    background: #44046b !important;
+    border-color: #44046b;
     color: white !important;
     text-align: center, center !important;
 }
@@ -115,7 +130,7 @@ h1{
     text-align: left, top;
 }
 
-.player_name, .player_score {
+.player_name_main {
     color: whitesmoke;
 }
 
@@ -123,3 +138,17 @@ h1{
     font-weight: bolder;
 }
 
+
+.player_score {
+    color: black;
+}
+
+#player_scores {
+    background-color: white;
+    border-radius: 10px;
+    border-top: solid #7209B7 !important;
+    border-width: 10px !important;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.094);
+    padding: 9px;
+    text-align: left;
+}

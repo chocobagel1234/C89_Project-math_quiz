@@ -26,31 +26,43 @@
     </head>
     
     <body>
-    <h4 class="player_name" id="player1_name"></h4> <span class="player_score" id="player1_score"></span>
-    <br>
-    <h4 class="player_name" id="player2_name"></h4> <p class="player_score" id="player2_score"></p>
 
+    <!--Main game begins-->
+<br>
     <h1 style="color: white;"><strong>The Math Quiz!</strong></h1>
     <section id="quiz-game">
     <div class="container">
         <center>
             <br>
+        
+        <div id="div_alignment" class="container" style="text-align: center;">
+        
+        <div id="turn_types" style="display: inline-block;">
             <h4 id="question_turn" class="turn-type"><strong>Question Turn: </strong>
-            </h4><span id="question_turn_user"><h4>(Player 1)</h4></span>
+            </h4><span><h4 id="question_turn_user"></h4></span>
             
             <h4 id="answer_turn" class="turn-type"><strong>Answer Turn: </strong></h4>
-            <span id="answer_turn_user"><h4>(Player 2)</h4></span>
+            <span><h4 id="answer_turn_user"></h4></span>
+    </div>
+        
+
+        <div id="player_scores"  style="display: inline-block;" class="col-lg-2 col-md-5 col-sm-7 col-xs-9">
+        <h5><b>Scores:</b></h5>
+        <!--Player 1 score-->
+            <h4 class="player_name" id="player1_name" style="display:inline-block;">(Player 1): </h4> 
+        
+            <h4 class="player_score" id="player1_score" style="display:inline-block;"></h4>
+         <br>
+        <!--Player 2 score-->
+            <h4 class="player_name" id="player2_name" style="display:inline-block;">(Player 2): </h4> 
+        
+            <h4 class="player_score" id="player2_score" style="display:inline-block;"></h4>
+    </div>
+    <br><br>
+</div>
 
             <div id="output">
-
-             <div class="container question-elements">
-                <span><h3 class="question"><strong> × </strong></span>
-            </div>
-
-                <label class="answer_label">Answer:</label>
-                <input type="number" id="answer_input" class="form-control" placeholder="Enter your answer here">
-                <br>
-                <button onclick="check()"  class="btn btn-info btn-sm">Check</button>
+                <!--Contens appear here in JS-->   
             </div>
                 <br><br>
                 <div class="col-lg-6 col-sm-10 col-xs-11 num_div1">
@@ -65,9 +77,9 @@
                 <br>
             </div>
             <br><br>
-            <button onclick="send()" class="btn btn-success btn-lg">Send</button>
+            <button onclick="send()" class="btn btn-success btn-lg" style="display:inline-block;">Send</button>
             <br><br>
-            <button onclick="back()" class="btn btn-info btn-sm"><span>Back</span></button>
+            <button onclick="back()" class="btn btn-info btn-md" style="display:inline-block;"><span>Back</span></button>
             <br><br>
     </center>
     </div>
